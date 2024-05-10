@@ -53,7 +53,7 @@ html {
   background-color: var(--white);
 }
 
-#user{
+#user {
   width: 20%;
   padding: 30px;
   background-color: var(--background-cream);
@@ -69,7 +69,7 @@ html {
 
 #content {
   flex: 1;
-  padding: 20px;
+  padding: 30px;
   background-color: var(--background-cream);
 }
 
@@ -89,11 +89,6 @@ html {
   color: var(--red);
 }
 
-.card,
-.rounded-circle {
-  border: 2px solid var(--dark-blue) !important;
-}
-
 .rounded-circle {
   height: 60px;
   width: 60px;
@@ -107,8 +102,8 @@ html {
 .search {
   position: absolute;
   right: 13px;
-  top:15px;
-  color:#ced4da;
+  top: 15px;
+  color: #ced4da;
 }
 
 .search {
@@ -119,16 +114,29 @@ html {
   color: black;
 }
 
-.search-bar input {
-  border-top: 2px solid var(--dark-blue);
-  border-right: 4px solid var(--dark-blue);
-  border-bottom: 4px solid var(--dark-blue);
-  border-left: 2px solid var(--dark-blue);
-  border-radius: 21px 21px 21px 21px;
--webkit-border-radius: 21px 21px 21px 21px;
--moz-border-radius: 21px 21px 21px 21px;
+.card-img-border img {
+  border-radius: 17px 18px 0px 0px !important;
+  -webkit-border-radius: 17px 18px 0px 0px !important;
+  -moz-border-radius: 17px 18px 0px 0px !important;
 }
 
+.card-side-img-border img{
+  border-radius: 19px 0px 0px 19px !important;
+  -webkit-border-radius: 19px 0px 0px 19px !important;
+  -moz-border-radius: 19px 0px 0px 19px !important;
+}
+
+.search-bar input,
+.card,
+.rounded-circle {
+  border-top: 2px solid var(--dark-blue) !important;
+  border-right: 4px solid var(--dark-blue) !important;
+  border-bottom: 4px solid var(--dark-blue) !important;
+  border-left: 2px solid var(--dark-blue) !important;
+  border-radius: 21px 21px 21px 21px !important;
+  -webkit-border-radius: 21px 21px 21px 21px !important;
+  -moz-border-radius: 21px 21px 21px 21px !important;
+}
 
 .search-icon {
   font-size: 25px;
@@ -139,8 +147,23 @@ html {
   color: var(--dark-blue);
 }
 
-.back {
+.back,.outer-tag {
   background-color: white !important;
-  border: 2px solid black !important;
+  border: 2px solid var(--dark-blue) !important;
   color: black !important;
+}
+
+.outer-tag{
+  width: 140px;
+  height: 40px;
+  border-radius: 30px;
+}
+
+.tag-icon{
+  border: 2px solid var(--dark-blue) !important;
+  color: black !important;
+  font-size: 20px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
 }

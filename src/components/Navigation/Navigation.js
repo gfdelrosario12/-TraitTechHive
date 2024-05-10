@@ -49,6 +49,10 @@ function Navigation() {
         <div className="my-3">
           <Link to="/about" id="upgrade">
             <Card
+              cardWidth="200px"
+              cardHeight="190px"
+              imageWidth="195px"
+              imageHeight="100px"
               imageUrl="https://i.natgeofe.com/k/520e971d-7a22-4a6f-90dc-258df74e45bc/american-goldfinch.jpg"
               title="Upgrade to Pro Plan"
             />

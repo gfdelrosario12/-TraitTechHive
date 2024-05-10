@@ -2,7 +2,7 @@ import React from "react";
 
 function Card({ imageUrl, title, text, cardWidth, cardHeight, imageWidth, imageHeight }) {
   return (
-    <div className="card" style={{ width: cardWidth, height: cardHeight }}>
+    <div className="card card-img-border" style={{ width: cardWidth, height: cardHeight }}>
       <img
         src={imageUrl}
         className="card-img-top"
@@ -11,7 +11,7 @@ function Card({ imageUrl, title, text, cardWidth, cardHeight, imageWidth, imageH
       />
       <div className="card-body">
         <h5 className="card-title title-font">{title}</h5>
-        <p className="card-text">{text}</p>
+        <p className="card-text normal text">{text}</p>
       </div>
     </div>
   );

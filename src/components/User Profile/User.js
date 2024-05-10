@@ -26,36 +26,39 @@ function User() {
         <div>
           <Link to="/productivity-masterclass" className="link-style">
             <Card
-              cardWidth="250px"
-              cardHeight="230px"
-              imageWidth="247px"
-              imageHeight="200px"
+              cardWidth="240px"
+              cardHeight="210px"
+              imageWidth="235px"
+              imageHeight="100px"
               imageUrl="https://i.natgeofe.com/k/520e971d-7a22-4a6f-90dc-258df74e45bc/american-goldfinch.jpg"
               title="Productivity Masterclass"
+              text="sample text"
             />
           </Link>
         </div>
         <div className="mt-3">
           <Link to="/productivity-masterclass" className="link-style">
             <CardSideImage
-              cardWidth="250px"
-              cardHeight="103px"
+              cardWidth="240px"
+              cardHeight="110px"
               imageWidth="250px"
-              imageHeight="100px"
+              imageHeight="105px"
               imageUrl="https://i.natgeofe.com/k/520e971d-7a22-4a6f-90dc-258df74e45bc/american-goldfinch.jpg"
               title="Productivity Masterclass"
+              text="sample text"
             />
           </Link>
         </div>
         <div>
           <Link to="/productivity-masterclass" className="link-style">
             <CardSideImage
-              cardWidth="250px"
-              cardHeight="103px"
+              cardWidth="240px"
+              cardHeight="110px"
               imageWidth="250px"
-              imageHeight="100px"
+              imageHeight="105px"
               imageUrl="https://i.natgeofe.com/k/520e971d-7a22-4a6f-90dc-258df74e45bc/american-goldfinch.jpg"
               title="Productivity Masterclass"
+              text="sample text"
             />
           </Link>
         </div>

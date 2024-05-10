@@ -4,7 +4,7 @@ function CardSideImage({ imageUrl, title, text, cardWidth, cardHeight, imageWidt
   return (
     <div className="card mb-3" style={{ width: cardWidth, height: cardHeight }}>
       <div className="row g-0">
-        <div className="col-md-4">
+        <div className="col-md-4 card-side-img-border">
           <img
             src={imageUrl}
             className="img-fluid rounded-start"
@@ -14,8 +14,8 @@ function CardSideImage({ imageUrl, title, text, cardWidth, cardHeight, imageWidt
         </div>
         <div className="col-md-8">
           <div className="card-body">
-            <h5 className="card-title">{title}</h5>
-            <p className="card-text">{text}</p>
+            <h5 className="card-title title-font">{title}</h5>
+            <p className="card-text normal-text">{text}</p>
           </div>
         </div>
       </div>
