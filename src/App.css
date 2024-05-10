@@ -1,5 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Poetsen+One&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap");
 
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
+}
+
 /* navigation */
 .links {
   display: flex;
@@ -61,5 +74,16 @@
 }
 
 .card {
-  border: 1px solid #00004a; /* Add border to the left side of user and right side of navigation */
+  border: 2px solid #00004a !important;
+}
+
+.rounded-circle {
+  height: 60px;
+  width: 60px;
+  border: 2px solid #00004a !important;
+}
+
+.link-style {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit text color */
 }

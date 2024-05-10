@@ -1,6 +1,7 @@
 import React from "react";
 import Navigation from "../Navigation/Navigation";
 import "../../App.css";
+import User from "../User Profile/User";
 
 function HomeComponent({ children }) {
   return (
@@ -9,7 +10,7 @@ function HomeComponent({ children }) {
         <Navigation/>
       </div>
       <div id="content">{children}</div>
-      <div id="user">Hello World</div>
+      <div id="user"><User/></div>
     </div>
   );
 }
