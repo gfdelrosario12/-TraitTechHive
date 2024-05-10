@@ -1,16 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Poetsen+One&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap");
 
+:root {
+  --black: #000;
+  --white: #fff;
+  --red: #ff0000;
+  --dark-blue: #00004a;
+  --light-gray: #e5e5e5;
+  --background-cream: #fcf4e8;
+  --text-gray: #303647;
+  --placeholder-gray: #ced4da;
+}
+
 html {
   overflow: scroll;
   overflow-x: hidden;
 }
 ::-webkit-scrollbar {
-  width: 0;  /* Remove scrollbar space */
-  background: transparent;  /* Optional: just make scrollbar invisible */
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
 }
 /* Optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
-  background: #FF0000;
+  background: var(--red);
 }
 
 /* navigation */
@@ -22,7 +33,7 @@ html {
 .links a {
   margin-bottom: 10px;
   text-decoration: none;
-  color: black;
+  color: var(--black);
 }
 
 .link-hover a:hover {
@@ -38,28 +49,33 @@ html {
 
 #nav {
   width: 20%;
-  border-right: 1px solid black; /* Add border to the right side of navigation and left side of user */
   padding: 30px;
-  background-color: white;
+  background-color: var(--white);
+}
+
+#user{
+  width: 20%;
+  padding: 30px;
+  background-color: var(--background-cream);
+}
+
+#nav {
+  border-right: 1px solid var(--black);
 }
 
 #user {
-  width: 20%;
-  border-left: 1px solid black; /* Add border to the left side of user and right side of navigation */
-  padding: 30px;
-  background-color: #fcf4e8;
+  border-left: 1px solid var(--black);
 }
 
 #content {
   flex: 1;
   padding: 20px;
-  background-color: #fcf4e8;
+  background-color: var(--background-cream);
 }
 
 .title-font {
-  color: #303647;
+  color: var(--text-gray);
   font-family: "Poetsen One", sans-serif;
-  color: black;
   text-decoration: none;
   font-style: normal;
 }
@@ -70,20 +86,61 @@ html {
 }
 
 .red-test {
-  color: red;
+  color: var(--red);
 }
 
-.card {
-  border: 2px solid #00004a !important;
+.card,
+.rounded-circle {
+  border: 2px solid var(--dark-blue) !important;
 }
 
 .rounded-circle {
   height: 60px;
   width: 60px;
-  border: 2px solid #00004a !important;
 }
 
 .link-style {
   text-decoration: none; /* Remove underline */
   color: inherit; /* Inherit text color */
+}
+
+.search {
+  position: absolute;
+  right: 13px;
+  top:15px;
+  color:#ced4da;
+}
+
+.search {
+  position: absolute;
+  left: 41%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+
+.search-bar input {
+  border-top: 2px solid var(--dark-blue);
+  border-right: 4px solid var(--dark-blue);
+  border-bottom: 4px solid var(--dark-blue);
+  border-left: 2px solid var(--dark-blue);
+  border-radius: 21px 21px 21px 21px;
+-webkit-border-radius: 21px 21px 21px 21px;
+-moz-border-radius: 21px 21px 21px 21px;
+}
+
+
+.search-icon {
+  font-size: 25px;
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--dark-blue);
+}
+
+.back {
+  background-color: white !important;
+  border: 2px solid black !important;
+  color: black !important;
 }

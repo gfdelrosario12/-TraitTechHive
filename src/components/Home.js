@@ -1,9 +1,12 @@
 import HomeComponent from "./Home Components/HomeComponent";
+import SearchBar from "./Home Components/SearchBar";
 
 function Home() {
   return (
     <div>
-      <HomeComponent></HomeComponent>
+      <HomeComponent>
+        <SearchBar/>
+      </HomeComponent>
     </div>
   );
 }
