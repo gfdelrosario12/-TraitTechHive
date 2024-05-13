@@ -51,25 +51,20 @@ html {
   width: 20%;
   padding: 30px;
   background-color: var(--white);
+  border-right: 1px solid var(--black);
 }
 
 #user {
   width: 20%;
   padding: 30px;
   background-color: var(--background-cream);
-}
-
-#nav {
-  border-right: 1px solid var(--black);
-}
-
-#user {
   border-left: 1px solid var(--black);
 }
 
 #content {
   flex: 1;
   padding: 30px;
+  overflow-y: auto; /* Allow content to scroll */
   background-color: var(--background-cream);
 }
 
@@ -109,8 +104,8 @@ html {
 .search {
   position: absolute;
   left: 41%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  top: 7px; /* Adjust top position */
+  transform: translateX(-50%); /* Center horizontally */
   color: black;
 }
 

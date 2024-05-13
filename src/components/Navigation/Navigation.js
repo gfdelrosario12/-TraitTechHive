@@ -2,14 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../../App.css";
 import Card from "../General Components/Card";
-import {
-  BsFillHouseFill,
-  BsFolder,
-  BsCalendar3,
-  BsBookmarkHeart,
-  BsFillPersonFill,
-} from "react-icons/bs";
-import { CiSettings } from "react-icons/ci";
+import { BsFillHouseFill, BsFillPersonFill } from "react-icons/bs";
+import { IoDocumentSharp, IoNewspaperOutline } from "react-icons/io5";
+import { RiGalleryLine } from "react-icons/ri";
+import { MdOutlinePhoneAndroid } from "react-icons/md";
 
 function Navigation() {
   return (
@@ -19,25 +15,25 @@ function Navigation() {
           Home
         </Link>
         <div className="links my-4 title-font link-hover fs-5">
-          <Link to="/about" className="p-2">
+          <Link to="/" className="p-2">
             <BsFillHouseFill className="mx-2" />
             Overview
           </Link>
-          <Link to="/services" className="p-2">
-            <BsFolder className="mx-2" />
-            Courses
+          <Link to="/examples" className="p-2">
+            <IoDocumentSharp className="mx-2" />
+            Examples
           </Link>
-          <Link to="/contact" className="p-2">
-            <BsCalendar3 className="mx-2" />
-            Schedule
+          <Link to="/news" className="p-2">
+            <IoNewspaperOutline className="mx-2" />
+            News
           </Link>
-          <Link to="/faq" className="p-2">
-            <BsBookmarkHeart className="mx-2" />
-            Wishlist
+          <Link to="/gallery" className="p-2">
+            <RiGalleryLine className="mx-2" />
+            Gallery
           </Link>
           <Link to="/blog" className="p-2">
-            <CiSettings className="mx-2" />
-            Setting
+            <MdOutlinePhoneAndroid  className="mx-2" />
+            Application
           </Link>
         </div>
       </div>

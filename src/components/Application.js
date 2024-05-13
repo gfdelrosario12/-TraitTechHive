@@ -1,7 +1,7 @@
-function About() {
+function Application() {
     return (
       <div>Hello World</div>
     );
   }
   
-  export default About;
+  export default Application;
