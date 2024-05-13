@@ -1,12 +1,18 @@
 import React from "react";
 import { IoIosArrowBack } from "react-icons/io";
 import { CiSearch } from "react-icons/ci";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function SearchBar() {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(-1);
+  };
+
   return (
     <div className="input-group mb-3 d-flex flex-row align-items-center row">
-      <div className="input-group-prepend col-1">
+      <div className="input-group-prepend col-1" onClick={handleClick}>
         <button className="btn btn-outline-secondary rounded-pill back" type="button">
           <IoIosArrowBack />
         </button>
