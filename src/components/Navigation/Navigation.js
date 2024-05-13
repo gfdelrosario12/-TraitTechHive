@@ -12,7 +12,7 @@ function Navigation() {
     <div>
       <div>
         <Link to="/" className="title-font fs-2">
-          Home
+        TraitTechHive
         </Link>
         <div className="links my-4 title-font link-hover fs-5">
           <Link to="/" className="p-2">
@@ -44,6 +44,7 @@ function Navigation() {
         </Link>
         <div className="my-3">
           <Link to="/about" id="upgrade">
+            
             <Card
               cardWidth="200px"
               cardHeight="190px"
