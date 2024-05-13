@@ -2,7 +2,7 @@ import React from "react";
 
 function CardSideImage({ imageUrl, title, text, cardWidth, cardHeight, imageWidth, imageHeight }) {
   return (
-    <div className="card my-3" style={{ width: cardWidth, height: cardHeight }}>
+    <div className="card my-2" style={{ width: cardWidth, height: cardHeight }}>
       <div className="row g-0">
         <div className="col-md-4 card-side-img-border">
           <img

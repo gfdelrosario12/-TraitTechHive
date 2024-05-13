@@ -31,7 +31,7 @@ function Navigation() {
             <RiGalleryLine className="mx-2" />
             Gallery
           </Link>
-          <Link to="/blog" className="p-2">
+          <Link to="/application" className="p-2">
             <MdOutlinePhoneAndroid  className="mx-2" />
             Application
           </Link>
