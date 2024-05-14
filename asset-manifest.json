@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/TraitTechHive/static/css/main.bf3cdd28.css",
+    "main.js": "/TraitTechHive/static/js/main.ff7e5ae1.js",
+    "static/js/453.d8179999.chunk.js": "/TraitTechHive/static/js/453.d8179999.chunk.js",
+    "static/media/slick.svg": "/TraitTechHive/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/TraitTechHive/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/TraitTechHive/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/TraitTechHive/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/TraitTechHive/index.html",
+    "main.bf3cdd28.css.map": "/TraitTechHive/static/css/main.bf3cdd28.css.map",
+    "main.ff7e5ae1.js.map": "/TraitTechHive/static/js/main.ff7e5ae1.js.map",
+    "453.d8179999.chunk.js.map": "/TraitTechHive/static/js/453.d8179999.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bf3cdd28.css",
+    "static/js/main.ff7e5ae1.js"
+  ]
+}
