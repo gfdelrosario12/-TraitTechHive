@@ -6,6 +6,8 @@ import News from "./components/News/News";
 import Gallery from "./components/Gallery/Gallery";
 import Application from "./components/Application/Application";
 import DeviceExamples from "./components/Examples/DeviceExamples";
+import Device from "./components/Home Components/Device"
+import TraitsExamples from "./components/Examples/TraitsExamples";
 
 function App() {
   return (
@@ -15,8 +17,9 @@ function App() {
         <Route path={"/news"} element={<News />} />
         <Route path={"/gallery"} element={<Gallery />} />
         <Route path={"/application"} element={<Application />} />
+        <Route path={"/Device"} element={<Device />} />
         <Route path={"/examples/devices/:title"} element={<DeviceExamples />} />
-        <Route path={"/examples/traits/:title"} element={<DeviceExamples />} />
+        <Route path={"/examples/traits/:title"} element={<TraitsExamples />} />
       </Routes>
   );
 }

@@ -208,3 +208,8 @@ button {
   width: 20px;
   margin: 1px;
 }
+
+.black-underline {
+  text-decoration: underline;
+  text-decoration-color: black; /* Change to your desired color */
+}
