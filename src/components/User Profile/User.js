@@ -22,7 +22,7 @@ const User = ({ value1, value2, changeValues }) => {
       </div>
 
       <div>
-        <h1 className="fs-5 title-font my-4">Latest Learned</h1>
+        <h1 className="fs-5 title-font my-4">Meet the Team:</h1>
         <div>
           <button onClick={() => changeValues({ value1: "Test", value2: "https://i.natgeofe.com/k/520e971d-7a22-4a6f-90dc-258df74e45bc/american-goldfinch.jpg" })}>
             <CardSideImage

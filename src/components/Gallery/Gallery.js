@@ -1,4 +1,4 @@
-import HomeComponent from "../components/Home Components/HomeComponent";
+import HomeComponent from "../Home Components/HomeComponent";
 
 function Gallery() {
   return (

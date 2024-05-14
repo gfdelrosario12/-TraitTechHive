@@ -1,10 +1,10 @@
-import HomeComponent from "../components/Home Components/HomeComponent";
-import Card from "../components/General Components/Card";
+import HomeComponent from '../Home Components/HomeComponent';
+import Card from '../General Components/Card';
 
-function Examples() {
-  return (
-    <div>
-      <HomeComponent>
+function Application() {
+    return (
+      <div>
+        <HomeComponent>
       <h1 className="fs-5 title-font my-4">Device</h1>
         <div className="d-flex flex-row justify-content-center align-items-center">
           <div className="mx-2">
@@ -78,8 +78,8 @@ function Examples() {
           </div>
         </div>
       </HomeComponent>
-    </div>
-  );
-}
-
-export default Examples;
+      </div>
+    );
+  }
+  
+  export default Application;

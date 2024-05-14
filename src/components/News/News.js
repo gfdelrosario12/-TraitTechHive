@@ -1,5 +1,5 @@
-import HomeComponent from '../components/Home Components/HomeComponent';
-import Card from '../components/General Components/Card';
+import HomeComponent from '../Home Components/HomeComponent';
+import Card from '../General Components/Card';
 
 function News() {
     return (
