@@ -56,7 +56,7 @@ html {
 
 #user {
   width: 20%;
-  padding: 30px;
+  padding: 30px 20px 30px 20px;
   background-color: var(--background-cream);
   border-left: 1px solid var(--black);
 }
@@ -64,14 +64,14 @@ html {
 #content {
   flex: 1;
   padding: 40px;
-  overflow-y: auto; /* Allow content to scroll */
   background-color: var(--background-cream);
+  overflow-y: auto; /* Enable vertical scrollbar for content */
 }
 
 .title-font {
   color: var(--text-gray);
   font-family: "Poetsen One", sans-serif;
-  text-decoration: none;
+  text-decoration: none !important;
   font-style: normal;
 }
 

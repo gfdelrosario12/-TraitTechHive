@@ -1,6 +1,16 @@
 import React from "react";
 import HomeComponent from "../Home Components/HomeComponent";
 import CardSlider from "../General Components/CardSlider";
+import smartPhonesImage from "../../assets/images/6.png";
+import tabletsImage from "../../assets/images/7.png";
+import laptopsImage from "../../assets/images/8.png";
+import smartWatchesImage from "../../assets/images/9.png";
+import eReadersImage from "../../assets/images/10.png";
+import handheldImage from "../../assets/images/11.png";
+import technicalImage from "../../assets/images/14.png";
+import attitudesImage from "../../assets/images/15.png";
+import learningImage from "../../assets/images/16.png";
+import socialImage from "../../assets/images/17.png";
 
 function Examples() {
   const deviceCards = [
@@ -10,8 +20,7 @@ function Examples() {
       cardHeight: "250px",
       imageWidth: "235px",
       imageHeight: "200px",
-      imageUrl:
-        "https://i.natgeofe.com/k/520e971d-7a22-4a6f-90dc-258df74e45bc/american-goldfinch.jpg",
+      imageUrl: smartPhonesImage,
       title: "Smartphones",
     },
     {
@@ -20,8 +29,7 @@ function Examples() {
       cardHeight: "250px",
       imageWidth: "235px",
       imageHeight: "200px",
-      imageUrl:
-        "https://i.natgeofe.com/k/520e971d-7a22-4a6f-90dc-258df74e45bc/american-goldfinch.jpg",
+      imageUrl: tabletsImage,
       title: "Tablets",
     },
     {
@@ -30,8 +38,7 @@ function Examples() {
       cardHeight: "250px",
       imageWidth: "235px",
       imageHeight: "200px",
-      imageUrl:
-        "https://i.natgeofe.com/k/520e971d-7a22-4a6f-90dc-258df74e45bc/american-goldfinch.jpg",
+      imageUrl: laptopsImage,
       title: "Laptop Computers",
     },
     {
@@ -40,8 +47,7 @@ function Examples() {
       cardHeight: "250px",
       imageWidth: "235px",
       imageHeight: "200px",
-      imageUrl:
-        "https://i.natgeofe.com/k/520e971d-7a22-4a6f-90dc-258df74e45bc/american-goldfinch.jpg",
+      imageUrl: smartWatchesImage,
       title: "Smartwatches",
     },
     {
@@ -50,8 +56,7 @@ function Examples() {
       cardHeight: "250px",
       imageWidth: "235px",
       imageHeight: "200px",
-      imageUrl:
-        "https://i.natgeofe.com/k/520e971d-7a22-4a6f-90dc-258df74e45bc/american-goldfinch.jpg",
+      imageUrl: eReadersImage,
       title: "E-Readers",
     },
     {
@@ -60,8 +65,7 @@ function Examples() {
       cardHeight: "250px",
       imageWidth: "235px",
       imageHeight: "200px",
-      imageUrl:
-        "https://i.natgeofe.com/k/520e971d-7a22-4a6f-90dc-258df74e45bc/american-goldfinch.jpg",
+      imageUrl: handheldImage,
       title: "Handheld Gaming Consoles",
     },
   ];
@@ -73,7 +77,7 @@ function Examples() {
       cardHeight: "250px",
       imageWidth: "235px",
       imageHeight: "200px",
-      imageUrl: "https://i.natgeofe.com/k/520e971d-7a22-4a6f-90dc-258df74e45bc/american-goldfinch.jpg",
+      imageUrl: technicalImage,
       title: "Technical Skills",
     },
     {
@@ -82,8 +86,8 @@ function Examples() {
       cardHeight: "250px",
       imageWidth: "235px",
       imageHeight: "200px",
-      imageUrl: "https://i.natgeofe.com/k/520e971d-7a22-4a6f-90dc-258df74e45bc/american-goldfinch.jpg",
-      title: " Attitudes and Behaviors",
+      imageUrl: attitudesImage,
+      title: "Attitudes and Behaviors",
     },
     {
       url: "/examples/traits/learning",
@@ -91,7 +95,7 @@ function Examples() {
       cardHeight: "250px",
       imageWidth: "235px",
       imageHeight: "200px",
-      imageUrl: "https://i.natgeofe.com/k/520e971d-7a22-4a6f-90dc-258df74e45bc/american-goldfinch.jpg",
+      imageUrl: learningImage,
       title: "Learning and Information Processing",
     },
     {
@@ -100,7 +104,7 @@ function Examples() {
       cardHeight: "250px",
       imageWidth: "235px",
       imageHeight: "200px",
-      imageUrl: "https://i.natgeofe.com/k/520e971d-7a22-4a6f-90dc-258df74e45bc/american-goldfinch.jpg",
+      imageUrl: socialImage,
       title: "Social and Communication Skills",
     },
   ];

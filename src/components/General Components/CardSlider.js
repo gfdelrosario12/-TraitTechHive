@@ -9,20 +9,20 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const SamplePrevArrow = (props) => {
   const { className, style, onClick } = props;
-  return(
-    <div onClick={onClick} className={`arrow ${className}`} >
-      <IoIosArrowBack class="arrows" style={{color:"black"}}/>
+  return (
+    <div onClick={onClick} className={`arrow ${className}`}>
+      <IoIosArrowBack class="arrows" style={{ color: "black" }} />
     </div>
-  )
-  }
+  );
+};
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
-  return(
-    <div onClick={onClick} className={`arrow ${className}`} >
-      <IoIosArrowForward class="arrows" style={{color:"black"}}/>
+  return (
+    <div onClick={onClick} className={`arrow ${className}`}>
+      <IoIosArrowForward class="arrows" style={{ color: "black" }} />
     </div>
-  )
+  );
 }
 
 function CardSlider({ cards }) {
@@ -32,7 +32,7 @@ function CardSlider({ cards }) {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    nextArrow: <SampleNextArrow to="next"/>,
+    nextArrow: <SampleNextArrow to="next" />,
     prevArrow: <SamplePrevArrow to="prev" />,
   };
 
@@ -42,14 +42,18 @@ function CardSlider({ cards }) {
         <div key={index}>
           <Link to={`${card.url}`} style={{ textDecoration: "none" }}>
             <Card
+              className="p-4"
               cardWidth={card.cardWidth}
-              cardHeight={card.cardHeight}
-              imageWidth={card.imageWidth}
-              imageHeight={card.imageHeight}
+              cardHeight="340px"
+              imageWidth="100%"
+              imageHeight="230px"
               imageUrl={card.imageUrl}
-              title={card.title}
-              text={card.text}
-            />
+            >
+              <div className="d-flex flex-column justify-content-center align-items-center h-100">
+                <h5 className="card-title title-font text-center mb-3">{card.title}</h5>
+                <p className="normal-text text-center">{card.text}</p>
+              </div>
+            </Card>
           </Link>
         </div>
       ))}

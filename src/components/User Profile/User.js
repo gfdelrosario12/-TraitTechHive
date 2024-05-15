@@ -1,13 +1,25 @@
 import React, { useState } from "react";
 import CardSideImage from "../General Components/CardSideImage";
 import { connect } from 'react-redux';
+import Iana from "../../assets/images/reporters/Iana.png";
+import Stephanie from "../../assets/images/reporters/Stephanie.png";
+import Chester from "../../assets/images/reporters/Chester.png";
+import Rhona from "../../assets/images/reporters/RHONA.png";
+import { Link } from "react-router-dom";
 
-const User = ({ value1, value2, changeValues }) => {
+const User = ({ value1, value2, value3, changeValues }) => {
+  const [clickedCard, setClickedCard] = useState(null);
 
-  const handleCardClick = (name, url) => {
-    const textElement = document.getElementById('text-element');
-    const iamgeElement = document.getElementById('text-element');
-    textElement.textContent = 'New Text'; // Update the text content here
+  const cards = [
+    { id: 1, title: "Camina Juliana Bautista", imageUrl: Iana, subtext: "Head" },
+    { id: 2, title: "Stephanie Amor Bartolay", imageUrl: Stephanie, subtext: "Research Staff" },
+    { id: 3, title: "Chester Wolf C. Enriquez", imageUrl: Chester, subtext: "Tech Staff" },
+    { id: 4, title: "Rhona May Butalon", imageUrl: Rhona, subtext: "Research Staff" }
+  ];
+
+  const handleCardClick = (card) => {
+    changeValues({ value1: card.title, value2: card.imageUrl, value3: card.subtext });
+    setClickedCard(card.id === clickedCard ? null : card.id);
   };
 
   return (
@@ -17,63 +29,35 @@ const User = ({ value1, value2, changeValues }) => {
           <img src={value2} className="rounded-circle" alt={value1} />
         </div>
         <div className="mx-3">
-          <h1 className="fs-5 title-font">{value1}</h1>
+          <h1 className="fs-4 title-font">{value1}</h1>
+          <p>{value3}</p>
         </div>
       </div>
 
       <div>
-        <h1 className="fs-5 title-font my-4">Meet the Team:</h1>
+        <Link to="/peers" className="black-underline">
+          <h1 className="fs-5 title-font my-4">My Peers:</h1>
+        </Link>
+        
         <div>
-          <button onClick={() => changeValues({ value1: "Test", value2: "https://i.natgeofe.com/k/520e971d-7a22-4a6f-90dc-258df74e45bc/american-goldfinch.jpg" })}>
-            <CardSideImage
-              cardWidth="240px"
-              cardHeight="110px"
-              imageWidth="250px"
-              imageHeight="105px"
-              imageUrl="https://i.natgeofe.com/k/520e971d-7a22-4a6f-90dc-258df74e45bc/american-goldfinch.jpg"
-              title="Gladwin Del Rosario"
-              text="sample text"
-            />
-          </button>
-        </div>
-        <div>
-          <button onClick={() => changeValues({ value1: "Test", value2: "https://i.natgeofe.com/k/520e971d-7a22-4a6f-90dc-258df74e45bc/american-goldfinch.jpg" })}>
-            <CardSideImage
-              cardWidth="240px"
-              cardHeight="110px"
-              imageWidth="250px"
-              imageHeight="105px"
-              imageUrl="https://i.natgeofe.com/k/520e971d-7a22-4a6f-90dc-258df74e45bc/american-goldfinch.jpg"
-              title="Gladwin Del Rosario"
-              text="sample text"
-            />
-          </button>
-        </div>
-        <div>
-          <button onClick={() => changeValues({ value1: "Test", value2: "https://i.natgeofe.com/k/520e971d-7a22-4a6f-90dc-258df74e45bc/american-goldfinch.jpg" })}>
-            <CardSideImage
-              cardWidth="240px"
-              cardHeight="110px"
-              imageWidth="250px"
-              imageHeight="105px"
-              imageUrl="https://i.natgeofe.com/k/520e971d-7a22-4a6f-90dc-258df74e45bc/american-goldfinch.jpg"
-              title="Gladwin Del Rosario"
-              text="sample text"
-            />
-          </button>
-        </div>
-        <div>
-          <button onClick={() => changeValues({ value1: "Test", value2: "https://i.natgeofe.com/k/520e971d-7a22-4a6f-90dc-258df74e45bc/american-goldfinch.jpg" })}>
-            <CardSideImage
-              cardWidth="240px"
-              cardHeight="110px"
-              imageWidth="250px"
-              imageHeight="105px"
-              imageUrl="https://i.natgeofe.com/k/520e971d-7a22-4a6f-90dc-258df74e45bc/american-goldfinch.jpg"
-              title="Gladwin Del Rosario"
-              text="sample text"
-            />
-          </button>
+          {cards.map(card => (
+            clickedCard !== card.id && (
+              <div key={card.id}>
+                <button onClick={() => handleCardClick(card)}>
+                  <CardSideImage
+                    cardWidth="240px"
+                    cardHeight="110px"
+                    imageWidth="250px"
+                    imageHeight="105px"
+                    imageUrl={card.imageUrl}
+                  >
+                    <h5 className="fs-6 card-title title-font">{card.title}</h5>
+                    <p className="card-text normal-text">{card.subtext}</p>
+                  </CardSideImage>
+                </button>
+              </div>
+            )
+          ))}
         </div>
       </div>
     </div>
@@ -82,7 +66,8 @@ const User = ({ value1, value2, changeValues }) => {
 
 const mapStateToProps = state => ({
   value1: state.value1,
-  value2: state.value2
+  value2: state.value2,
+  value3: state.value3
 });
 
 const mapDispatchToProps = dispatch => ({

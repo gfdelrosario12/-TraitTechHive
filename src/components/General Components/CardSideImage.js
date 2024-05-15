@@ -1,10 +1,10 @@
 import React from "react";
 
-function CardSideImage({ imageUrl, title, text, cardWidth, cardHeight, imageWidth, imageHeight }) {
+function CardSideImage({ imageUrl, cardWidth, cardHeight, imageWidth, imageHeight, children }) {
   return (
-    <div className="card my-2" style={{ width: cardWidth, height: cardHeight }}>
+    <div className="card my-2" style={{ width: cardWidth, height: cardHeight, backgroundColor: 'inherit' }}>
       <div className="row g-0">
-        <div className="col-md-4 card-side-img-border">
+        <div className="col-md-4 card-side-img-border d-flex align-items-center justify-content-center">
           <img
             src={imageUrl}
             className="img-fluid rounded-start"
@@ -13,9 +13,8 @@ function CardSideImage({ imageUrl, title, text, cardWidth, cardHeight, imageWidt
           />
         </div>
         <div className="col-md-8">
-          <div className="card-body">
-            <h5 className="card-title title-font">{title}</h5>
-            <p className="card-text normal-text">{text}</p>
+          <div className="card-body" style={{ backgroundColor: 'inherit' }}>
+            {children}
           </div>
         </div>
       </div>
