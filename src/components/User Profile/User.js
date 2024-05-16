@@ -14,7 +14,7 @@ const User = ({ value1, value2, value3, changeValues }) => {
     { id: 1, title: "Camina Juliana Bautista", imageUrl: Iana, subtext: "Head" },
     { id: 2, title: "Stephanie Amor Bartolay", imageUrl: Stephanie, subtext: "Research Staff" },
     { id: 3, title: "Chester Wolf C. Enriquez", imageUrl: Chester, subtext: "Tech Staff" },
-    { id: 4, title: "Rhona May Butalon", imageUrl: Rhona, subtext: "Research Staff" }
+    { id: 4, title: "Rhona May Butalon", imageUrl: Rhona, subtext: "Field Staff" }
   ];
 
   const handleCardClick = (card) => {
@@ -48,7 +48,7 @@ const User = ({ value1, value2, value3, changeValues }) => {
                     cardWidth="240px"
                     cardHeight="110px"
                     imageWidth="250px"
-                    imageHeight="105px"
+                    imageHeight="104px"
                     imageUrl={card.imageUrl}
                   >
                     <h5 className="fs-6 card-title title-font">{card.title}</h5>

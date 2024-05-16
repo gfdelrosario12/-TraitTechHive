@@ -1,5 +1,5 @@
 import HomeComponent from "./HomeComponent";
-import bot from "../../assets/logos/transparent-logo.png";
+import bot from "../../assets/images/kumakaway.jpg";
 import CardSideImage from "../General Components/CardSideImage";
 import { Link } from "react-router-dom";
 

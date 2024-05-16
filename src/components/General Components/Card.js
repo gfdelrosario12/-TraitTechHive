@@ -3,8 +3,8 @@ import React from "react";
 function Card({ imageUrl, cardWidth, cardHeight, imageHeight, imageWidth, children }) {
   return (
     <div
-      className="card custom-card card-img-border"
-      style={{ width: cardWidth, height: cardHeight, backgroundColor: 'inherit' }}
+      className="card custom-card card-img-border d-flex align-items-center justify-content-center"
+      style={{ width: cardWidth, height: cardHeight, backgroundColor: 'inherit', position: 'relative' }}
     >
       <img
         src={imageUrl}
@@ -12,7 +12,7 @@ function Card({ imageUrl, cardWidth, cardHeight, imageHeight, imageWidth, childr
         alt="Card"
         style={{ height: imageHeight, width: imageWidth, objectFit: "cover" }}
       />
-      <div className="card-body">
+      <div className="card-body d-flex align-items-center justify-content-center text-center">
         {children}
       </div>
     </div>
