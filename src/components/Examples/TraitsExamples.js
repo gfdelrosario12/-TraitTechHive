@@ -5,7 +5,6 @@ import technicalImage from "../../assets/images/14.png";
 import attitudesImage from "../../assets/images/15.png";
 import learningImage from "../../assets/images/16.png";
 import socialImage from "../../assets/images/17.png";
-import kumakaway from "../../assets/images/kumakaway.jpg"
 
 const TraitsExamples = () => {
   const { title } = useParams();

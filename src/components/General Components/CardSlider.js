@@ -43,14 +43,13 @@ function CardSlider({ cards }) {
           <Link to={`${card.url}`} style={{ textDecoration: "none" }}>
             <Card
               cardWidth="250px"
-              cardHeight="370px"
+              cardHeight="380px"
               imageWidth="243px"
-              imageHeight="225px"
+              imageHeight="300px"
               imageUrl={card.imageUrl}
             >
               <div className="d-flex flex-column justify-content-center align-items-center h-100">
                 <h5 className="card-title title-font text-center mb-3">{card.title}</h5>
-                <p className="normal-text text-center">{card.text}</p>
               </div>
             </Card>
           </Link>
