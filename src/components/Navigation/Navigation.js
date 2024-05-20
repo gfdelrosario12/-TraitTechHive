@@ -66,7 +66,7 @@ const Navigation = ({ value1, value2, changeValues }) => {
               imageHeight="150px"
               imageUrl={proPlan}
             >
-              <h5 className="card-title title-font">Upgrade to Pro Plan</h5>
+              <h5 className="card-title title-font no-underline">Upgrade to Pro Plan</h5>
             </Card>
           </Link>
         </div>
