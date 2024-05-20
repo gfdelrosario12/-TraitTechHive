@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/TraitTechHive/static/css/main.5a5fc8af.css",
-    "main.js": "/TraitTechHive/static/js/main.5f26d2d4.js",
+    "main.css": "/TraitTechHive/static/css/main.34c9f64c.css",
+    "main.js": "/TraitTechHive/static/js/main.733b77ad.js",
     "static/js/453.bdf565f7.chunk.js": "/TraitTechHive/static/js/453.bdf565f7.chunk.js",
     "static/media/46.png": "/TraitTechHive/static/media/46.c595a2e140a543b10fea.png",
     "static/media/19.png": "/TraitTechHive/static/media/19.c4c362449b0da19a1525.png",
@@ -62,12 +62,12 @@
     "static/media/slick.ttf": "/TraitTechHive/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/TraitTechHive/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/TraitTechHive/index.html",
-    "main.5a5fc8af.css.map": "/TraitTechHive/static/css/main.5a5fc8af.css.map",
-    "main.5f26d2d4.js.map": "/TraitTechHive/static/js/main.5f26d2d4.js.map",
+    "main.34c9f64c.css.map": "/TraitTechHive/static/css/main.34c9f64c.css.map",
+    "main.733b77ad.js.map": "/TraitTechHive/static/js/main.733b77ad.js.map",
     "453.bdf565f7.chunk.js.map": "/TraitTechHive/static/js/453.bdf565f7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a5fc8af.css",
-    "static/js/main.5f26d2d4.js"
+    "static/css/main.34c9f64c.css",
+    "static/js/main.733b77ad.js"
   ]
 }
