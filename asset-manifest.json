@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/TraitTechHive/static/css/main.5a5fc8af.css",
-    "main.js": "/TraitTechHive/static/js/main.c4f9a086.js",
+    "main.js": "/TraitTechHive/static/js/main.5f26d2d4.js",
     "static/js/453.bdf565f7.chunk.js": "/TraitTechHive/static/js/453.bdf565f7.chunk.js",
     "static/media/46.png": "/TraitTechHive/static/media/46.c595a2e140a543b10fea.png",
     "static/media/19.png": "/TraitTechHive/static/media/19.c4c362449b0da19a1525.png",
@@ -52,6 +52,7 @@
     "static/media/10.png": "/TraitTechHive/static/media/10.0e51e04b8bc3d7a540a5.png",
     "static/media/28.png": "/TraitTechHive/static/media/28.3f94a4a4102c65f3c7ad.png",
     "static/media/all.jpg": "/TraitTechHive/static/media/all.0a1b3025e6700ba92194.jpg",
+    "static/media/qr-code.png": "/TraitTechHive/static/media/qr-code.2859454f4a47036ab7f7.png",
     "static/media/Pro Plan.jpg": "/TraitTechHive/static/media/Pro Plan.3ca0e7f43062a6bbe979.jpg",
     "static/media/genz.jpg": "/TraitTechHive/static/media/genz.a4f9c26e276a6459aa19.jpg",
     "static/media/kumakaway.jpg": "/TraitTechHive/static/media/kumakaway.e032da6765ad07ee9a66.jpg",
@@ -62,11 +63,11 @@
     "static/media/slick.woff": "/TraitTechHive/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/TraitTechHive/index.html",
     "main.5a5fc8af.css.map": "/TraitTechHive/static/css/main.5a5fc8af.css.map",
-    "main.c4f9a086.js.map": "/TraitTechHive/static/js/main.c4f9a086.js.map",
+    "main.5f26d2d4.js.map": "/TraitTechHive/static/js/main.5f26d2d4.js.map",
     "453.bdf565f7.chunk.js.map": "/TraitTechHive/static/js/453.bdf565f7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5a5fc8af.css",
-    "static/js/main.c4f9a086.js"
+    "static/js/main.5f26d2d4.js"
   ]
 }
