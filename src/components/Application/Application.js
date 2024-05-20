@@ -37,7 +37,6 @@ function Application() {
       subtext:
         "Explore apps that focus on identifying emotions, managing feelings, or social interaction skills in a safe and controlled environment.",
     },
-    // Add more card objects here
   ];
 
   const traits = [

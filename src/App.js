@@ -10,7 +10,6 @@ import DeviceDefinition from "./components/Home Components/DeviceDefinition"
 import TraitsExamples from "./components/Examples/TraitsExamples";
 import TraitsDefinition from "./components/Home Components/TraitsDefinition";
 import Peers from "./components/User Profile/Peers";
-import QR from "../src/components/Navigation/QR"
 
 function App() {
   return (
@@ -23,7 +22,6 @@ function App() {
         <Route path={"/device"} element={<DeviceDefinition />} />
         <Route path={"/traits"} element={<TraitsDefinition />} />
         <Route path={"/peers"} element={<Peers />} />
-        <Route path={"/qr"} element={<QR />} />
         <Route path={"/examples/devices/:title"} element={<DeviceExamples />} />
         <Route path={"/examples/traits/:title"} element={<TraitsExamples />} />
       </Routes>

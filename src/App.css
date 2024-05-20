@@ -109,7 +109,7 @@ html {
   color: black;
 }
 
-.card-img-border img, .card img {
+.card-img-border img {
   border-radius: 17px 18px 0px 0px !important;
   -webkit-border-radius: 17px 18px 0px 0px !important;
   -moz-border-radius: 17px 18px 0px 0px !important;
@@ -212,37 +212,4 @@ button {
 .black-underline {
   text-decoration: underline;
   text-decoration-color: black; /* Change to your desired color */
-}
-
-.no-underline {
-  text-decoration: none;
-}
-
-.gallery-images {
-  border-top: 2px solid var(--dark-blue) !important;
-  border-right: 4px solid var(--dark-blue) !important;
-  border-bottom: 4px solid var(--dark-blue) !important;
-  border-left: 2px solid var(--dark-blue) !important;
-  border-radius: 21px 21px 21px 21px !important;
-  -webkit-border-radius: 21px 21px 21px 21px !important;
-  -moz-border-radius: 21px 21px 21px 21px !important;
-  border-radius: 17px 18px 0px 0px !important;
-  -webkit-border-radius: 17px 18px 0px 0px !important;
-  -moz-border-radius: 17px 18px 0px 0px !important;
-}
-
-.gallery-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.gallery-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.gallery-card {
-  margin: 10px;
 }
