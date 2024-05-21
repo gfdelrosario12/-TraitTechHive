@@ -19,10 +19,6 @@ html {
   width: 0; /* Remove scrollbar space */
   background: transparent; /* Optional: just make scrollbar invisible */
 }
-/* Optional: show position indicator in red */
-::-webkit-scrollbar-thumb {
-  background: var(--red);
-}
 
 /* navigation */
 .links {
@@ -68,31 +64,8 @@ html {
   overflow-y: auto; /* Enable vertical scrollbar for content */
 }
 
-/* Change the scrollbar color, make it thinner and rounded */
-#content::-webkit-scrollbar {
-  width: 3px; /* Make the scrollbar thinner */
-}
-
 #content::-webkit-scrollbar-thumb {
   background-color: gray; /* Change the scrollbar color */
-  border-radius: 3px; /* Make the scrollbar rounded */
-}
-
-#content::-webkit-scrollbar-track {
-  background: transparent; /* Make the scrollbar track transparent */
-}
-
-/* Change the scrollbar color and make it thinner */
-#content::-webkit-scrollbar {
-  width: 8px; /* Make the scrollbar thinner */
-}
-
-#content::-webkit-scrollbar-thumb {
-  background-color: gray; /* Change the scrollbar color */
-}
-
-#content::-webkit-scrollbar-track {
-  background: transparent; /* Make the scrollbar track transparent */
 }
 
 .title-font {
