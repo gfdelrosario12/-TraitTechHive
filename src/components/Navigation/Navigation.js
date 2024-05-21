@@ -70,6 +70,8 @@ const Navigation = ({ value1, value2, changeValues }) => {
             </Card>
           </Link>
         </div>
+
+        
     </div>
   );
 };

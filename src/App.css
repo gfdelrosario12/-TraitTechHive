@@ -217,3 +217,51 @@ button {
 .no-underline {
   text-decoration: none;
 }
+
+.mobile-button-left,.mobile-button-right {
+  display: none; /* By default, hide the button */
+}
+
+@media (max-width: 768px) {
+  .mobile-button-left,
+  .mobile-button-right {
+    display: block;
+    margin-left: 10px; /* Adjust spacing between search bar and buttons */
+  }
+
+  .mobile-button-left {
+    left: 10px;
+  }
+
+  .mobile-button-right {
+    right: 10px;
+  }
+
+  /* Additional styling for the buttons if needed */
+  .mobile-button-left button,
+  .mobile-button-right button {
+    font-size: 14px;
+    /* Add additional styles as needed */
+  }
+    
+  #nav, #user {
+    display: none; /* Hide the navigation and user sections */
+  }
+
+  .search-bar {
+    position: relative; /* Remove absolute positioning for responsiveness */
+    margin-right: 15px; /* Add margin to separate from the back button */
+  }
+
+  .search-icon {
+    position: absolute; /* Position relative to the input box */
+    right: 15px; /* Adjust right position */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px; /* Adjust size for smaller screens */
+  }
+
+  .input-group-prepend {
+    margin-right: 0; /* Remove margin on smaller screens */
+  }
+}

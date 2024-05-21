@@ -14,10 +14,12 @@ function HomeComponent({ children }) {
   return (
     <div className="home-container">
       <div id="nav">
-        <Navigation/>
+        <Navigation />
       </div>
       <div id="content">
-      <SearchBar />
+        <div className="search-container d-flex flex-row justify-content-center align-items-center">
+          <SearchBar />
+        </div>
         <div className="tags d-flex justify-content-evenly align-items-center">
           <div className="mx-2">
             <Tags tagTitle="Coding" backgroundColor="#f4d07f">
@@ -45,8 +47,32 @@ function HomeComponent({ children }) {
             </Link>
           </div>
         </div>
-        {children}</div>
-      <div id="user"><User/></div>
+        {children}
+      </div>
+      <div id="user">
+        <User />
+      </div>
+      <div
+        className="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offCanvasLeft"
+        aria-labelledby="offCanvasLeftLabel"
+      >
+        <div className="offcanvas-body">
+          <Navigation />
+        </div>
+      </div>
+
+      <div
+        className="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offCanvasRight"
+        aria-labelledby="offCanvasRightLabel"
+      >
+        <div className="offcanvas-body">
+          <User />
+        </div>
+      </div>
     </div>
   );
 }

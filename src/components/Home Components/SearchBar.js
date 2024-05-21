@@ -11,16 +11,42 @@ function SearchBar() {
   };
 
   return (
-    <div className="input-group mb-3 d-flex flex-row align-items-center row">
-      <div className="input-group-prepend col-1" onClick={handleClick}>
-        <button className="btn btn-outline-secondary rounded-pill back" type="button">
-          <IoIosArrowBack />
+    <div className="container-fluid d-flex flex-row align-items-center">
+
+      <div className="input-group mb-3 d-flex flex-row align-items-center flex-grow-1">
+      <div className="mobile-button-left me-1">
+        <button
+          className="btn rounded-pill back"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offCanvasLeft"
+          aria-controls="offCanvasLeft"
+        >
+          Navigation
         </button>
       </div>
-      <div className="input-box search-bar col">
-        <input type="text" className="form-control" />
-        <span className="search">Search</span>
-        <Link><CiSearch className="search-icon"/></Link>
+        <div className="input-group-prepend" onClick={handleClick}>
+          <button className="btn btn-outline-secondary rounded-pill back mx-2" type="button">
+            <IoIosArrowBack />
+          </button>
+        </div>
+        <div className="input-box search-bar flex-grow-1">
+          <input type="text" className="form-control" placeholder="Search" />
+          <Link>
+            <CiSearch className="search-icon" />
+          </Link>
+        </div>
+        <div className="mobile-button-right">
+        <button
+          className="btn rounded-pill back"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offCanvasRight"
+          aria-controls="offCanvasRight"
+        >
+          My Peers
+        </button>
+      </div>
       </div>
     </div>
   );
