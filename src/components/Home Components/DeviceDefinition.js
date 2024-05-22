@@ -23,9 +23,9 @@ function DeviceDefinition() {
       <h5 className="fs-3 text-center card-title title-font">Exploring Mobile Devices</h5>
       <CardSideImage
         cardWidth="100%"
-        cardHeight="250px"
-        imageWidth="200px"
-        imageHeight="240px"
+        cardHeight="auto"
+        imageWidth="100%"
+        imageHeight="auto"
         imageUrl={mobile}
       >
         <div className="text-center">
@@ -39,8 +39,7 @@ function DeviceDefinition() {
       <h5 className="fs-3 text-center card-title title-font">Characteristics of Mobile Devices</h5>
       <div className="d-flex flex-row justify-content-center align-items-center">
         <div className="mx-3">
-          <Link to="/about" className="title-font">
-          <Card
+            <Card
               cardWidth="200px"
               cardHeight="270px"
               imageWidth="190px"
@@ -49,11 +48,9 @@ function DeviceDefinition() {
             >
               <h5 className="card-title text-center">Portability and Small Size</h5>
             </Card>
-          </Link>
         </div>
         <div className="mx-3 my-3">
-          <Link to="/about" className="title-font">
-          <Card
+            <Card
               cardWidth="200px"
               cardHeight="270px"
               imageWidth="190px"
@@ -62,10 +59,8 @@ function DeviceDefinition() {
             >
               <h5 className="card-title text-center">Wireless</h5>
             </Card>
-          </Link>
         </div>
         <div className="mx-3">
-          <Link to="/about" className="title-font">
             <Card
               cardWidth="200px"
               cardHeight="270px"
@@ -75,14 +70,12 @@ function DeviceDefinition() {
             >
               <h5 className="card-title text-center">Communication</h5>
             </Card>
-          </Link>
         </div>
       </div>
       <h5 className="fs-3 text-center card-title title-font">Why do we use mobile devices?</h5>
       <div className="d-flex flex-row justify-content-center align-items-center">
         <div className="mx-3">
-          <Link to="/about" className="title-font">
-          <Card
+            <Card
               cardWidth="200px"
               cardHeight="270px"
               imageWidth="190px"
@@ -91,11 +84,9 @@ function DeviceDefinition() {
             >
               <h5 className="card-title text-center">Testing</h5>
             </Card>
-          </Link>
         </div>
         <div className="mx-3 my-3">
-          <Link to="/about" className="title-font">
-          <Card
+            <Card
               cardWidth="200px"
               cardHeight="270px"
               imageWidth="190px"
@@ -104,10 +95,8 @@ function DeviceDefinition() {
             >
               <h5 className="card-title text-center">Web Browsing</h5>
             </Card>
-          </Link>
         </div>
         <div className="mx-3">
-          <Link to="/about" className="title-font">
             <Card
               cardWidth="200px"
               cardHeight="270px"
@@ -117,14 +106,14 @@ function DeviceDefinition() {
             >
               <h5 className="card-title text-center">Application</h5>
             </Card>
-          </Link>
         </div>
       </div>
-      <h5 className="fs-3 text-center card-title title-font">The downside of using mobile devices</h5>
+      <h5 className="fs-3 text-center card-title title-font">
+        The downside of using mobile devices
+      </h5>
       <div className="d-flex flex-row justify-content-center align-items-center">
         <div className="mx-3">
-          <Link to="/about" className="title-font">
-          <Card
+            <Card
               cardWidth="200px"
               cardHeight="270px"
               imageWidth="190px"
@@ -133,11 +122,9 @@ function DeviceDefinition() {
             >
               <h5 className="card-title text-center">Lack of Social Skills</h5>
             </Card>
-          </Link>
         </div>
         <div className="mx-3 my-3">
-          <Link to="/about" className="title-font">
-          <Card
+            <Card
               cardWidth="200px"
               cardHeight="270px"
               imageWidth="190px"
@@ -146,10 +133,8 @@ function DeviceDefinition() {
             >
               <h5 className="card-title text-center">Safety Basics</h5>
             </Card>
-          </Link>
         </div>
         <div className="mx-3">
-          <Link to="/about" className="title-font">
             <Card
               cardWidth="200px"
               cardHeight="270px"
@@ -159,7 +144,6 @@ function DeviceDefinition() {
             >
               <h5 className="card-title text-center">Evolving Language</h5>
             </Card>
-          </Link>
         </div>
       </div>
     </HomeComponent>

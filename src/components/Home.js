@@ -50,7 +50,7 @@ function Home() {
   return (
     <div>
       <HomeComponent>
-        <Link to = "/device" className="black-underline"><h1 className="fs-5 title-font my-4">Device</h1></Link>
+        <Link to = "/device" className="black-underline"><h1 className="fs-5 title-font my-4">Devices</h1></Link>
         <div className="d-flex flex-row flex-wrap justify-content-center align-items-center">
           {devices.map((card) => (
             <div className="mx-2">

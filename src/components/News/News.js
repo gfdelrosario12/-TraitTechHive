@@ -48,7 +48,7 @@ function News() {
     <div>
       <HomeComponent>
         <h1 className="fs-5 title-font my-4">Device</h1>
-        <div className="d-flex flex-row justify-content-center align-items-center">
+        <div className="d-flex flex-row flex-wrap justify-content-center align-items-center">
           {devices.map((card) => (
             <div className="mx-2">
               <a href={card.href} className="title-font" target="_blank" rel="noopener noreferrer">
@@ -68,7 +68,7 @@ function News() {
           ))}
         </div>
         <h1 className="fs-5 title-font my-4">Digital Traits</h1>
-        <div className="d-flex flex-row justify-content-center align-items-center">
+        <div className="d-flex flex-row flex-wrap justify-content-center align-items-center">
           {traits.map((card) => (
             <div className="mx-2">
               <a href={card.href} className="title-font" target="_blank" rel="noopener noreferrer">

@@ -222,6 +222,17 @@ button {
   display: none; /* By default, hide the button */
 }
 
+.text-container {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  padding: 1rem;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
 @media (max-width: 768px) {
   .mobile-button-left,
   .mobile-button-right {
@@ -264,4 +275,6 @@ button {
   .input-group-prepend {
     margin-right: 0; /* Remove margin on smaller screens */
   }
+
+
 }

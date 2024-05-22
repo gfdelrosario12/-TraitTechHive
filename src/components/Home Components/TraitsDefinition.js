@@ -13,9 +13,9 @@ const TraitsDefinition = () => {
       <h5 className="fs-3 my-3 text-center card-title title-font">Digital Traits</h5>
       <CardSideImage
         cardWidth="100%"
-        cardHeight="170px"
-        imageWidth="150px"
-        imageHeight="164px"
+        cardHeight="auto"
+        imageWidth="100%"
+        imageHeight="auto"
         imageUrl={bot}
       >
         <div className="text-center">

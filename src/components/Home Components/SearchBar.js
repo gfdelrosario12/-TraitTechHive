@@ -22,7 +22,7 @@ function SearchBar() {
           data-bs-target="#offCanvasLeft"
           aria-controls="offCanvasLeft"
         >
-          Navigation
+          <h1 className="fs-6 title-font pt-2">Navigation</h1>
         </button>
       </div>
         <div className="input-group-prepend" onClick={handleClick}>
@@ -44,7 +44,7 @@ function SearchBar() {
           data-bs-target="#offCanvasRight"
           aria-controls="offCanvasRight"
         >
-          My Peers
+          <h1 className="fs-6 title-font pt-2">My Peers</h1>
         </button>
       </div>
       </div>
