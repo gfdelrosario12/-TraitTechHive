@@ -34,6 +34,20 @@ function CardSlider({ cards }) {
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow to="next" />,
     prevArrow: <SamplePrevArrow to="prev" />,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          dots: true,
+          infinite: true,
+          speed: 500,
+          nextArrow: <SampleNextArrow to="next" />,
+          prevArrow: <SamplePrevArrow to="prev" />,
+        },
+      },
+    ],
   };
 
   return (

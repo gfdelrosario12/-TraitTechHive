@@ -19,10 +19,6 @@ html {
   width: 0; /* Remove scrollbar space */
   background: transparent; /* Optional: just make scrollbar invisible */
 }
-/* Optional: show position indicator in red */
-::-webkit-scrollbar-thumb {
-  background: var(--red);
-}
 
 /* navigation */
 .links {
@@ -66,6 +62,10 @@ html {
   padding: 40px;
   background-color: var(--background-cream);
   overflow-y: auto; /* Enable vertical scrollbar for content */
+}
+
+#content::-webkit-scrollbar-thumb {
+  background-color: gray; /* Change the scrollbar color */
 }
 
 .title-font {
@@ -212,8 +212,4 @@ button {
 .black-underline {
   text-decoration: underline;
   text-decoration-color: black; /* Change to your desired color */
-}
-
-.no-underline {
-  text-decoration: none;
 }

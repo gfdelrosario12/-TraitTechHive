@@ -19,6 +19,7 @@ function App() {
         <Route path={"/examples"} element={<Examples />} />
         <Route path={"/news"} element={<News />} />
         <Route path={"/gallery"} element={<Gallery />} />
+        <Route path={"/qr"} element={<QR />} />
         <Route path={"/application"} element={<Application />} />
         <Route path={"/device"} element={<DeviceDefinition />} />
         <Route path={"/traits"} element={<TraitsDefinition />} />

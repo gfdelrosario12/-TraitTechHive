@@ -50,8 +50,8 @@ function Home() {
   return (
     <div>
       <HomeComponent>
-        <Link to = "/device" className="black-underline"><h1 className="fs-5 title-font my-4">Device</h1></Link>
-        <div className="d-flex flex-row justify-content-center align-items-center">
+        <Link to = "/device" className="black-underline"><h1 className="fs-5 title-font my-4">Devices</h1></Link>
+        <div className="d-flex flex-row flex-wrap justify-content-center align-items-center">
           {devices.map((card) => (
             <div className="mx-2">
               <a href={card.href} className="title-font" target="_blank" rel="noopener noreferrer">
@@ -71,7 +71,7 @@ function Home() {
           ))}
         </div>
         <Link to ="/traits" className="black-underline"><h1 className="fs-5 title-font my-4">Digital Traits</h1></Link>
-        <div className="d-flex flex-row justify-content-center align-items-center">
+        <div className="d-flex flex-row flex-wrap justify-content-center align-items-center">
           {traits.map((card) => (
             <div className="mx-2">
               <a href={card.href} className="title-font" target="_blank" rel="noopener noreferrer">
