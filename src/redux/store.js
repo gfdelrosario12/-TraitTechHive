@@ -2,13 +2,11 @@
 import { createStore } from 'redux';
 import all from "../assets/images/reporters/all.jpg"
 
-// Define the initial state
 const initialState = {
   value1: "TEAM",
   value2: all,
 };
 
-// Define the reducer function
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case 'CHANGE_VALUES':
@@ -23,7 +21,6 @@ const reducer = (state = initialState, action) => {
   }
 };
 
-// Create the Redux store
 const store = createStore(reducer);
 
 export default store;

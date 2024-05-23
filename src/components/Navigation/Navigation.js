@@ -10,13 +10,13 @@ import { connect } from "react-redux";
 import logo from "../../assets/logos/yellow-logo.jpg";
 import proPlan from "../../assets/images/Pro Plan.jpg";
 
-const Navigation = ({ value1, value2, changeValues }) => {
+const Navigation = ({changeValues }) => {
   return (
     <div>
       <div>
         <Link to="/" className="title-font fs-3">
           <div className="d-flex flex-row align-items-center">
-            <img src={logo} className="rounded-circle" />
+            <img src={logo} className="rounded-circle" alt="site qr code"/>
             <h1 className="ms-2 title-font fs-3">TraitTechHive</h1>
           </div>
         </Link>

@@ -8,7 +8,7 @@ import Rhona from "../../assets/images/reporters/RHONA.png";
 import { Link } from "react-router-dom";
 import HomeComponent from "../Home Components/HomeComponent";
 
-const Peers = ({ value1, value2, value3, changeValues }) => {
+const Peers = ({changeValues }) => {
   const [clickedCard, setClickedCard] = useState(null);
 
   const cards = [
