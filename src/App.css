@@ -17,11 +17,9 @@ html {
 }
 
 ::-webkit-scrollbar {
-  width: 0; /* Remove scrollbar space */
-  background: transparent; /* Optional: just make scrollbar invisible */
+  width: 0;
+  background: transparent;
 }
-
-/* navigation */
 
 .links {
   display: flex;
@@ -63,11 +61,11 @@ html {
   flex: 1;
   padding: 40px;
   background-color: var(--background-cream);
-  overflow-y: auto; /* Enable vertical scrollbar for content */
+  overflow-y: auto;
 }
 
 #content::-webkit-scrollbar-thumb {
-  background-color: gray; /* Change the scrollbar color */
+  background-color: gray;
 }
 
 .title-font {
@@ -92,8 +90,8 @@ html {
 }
 
 .link-style {
-  text-decoration: none; /* Remove underline */
-  color: inherit; /* Inherit text color */
+  text-decoration: none;
+  color: inherit;
 }
 
 .search {
@@ -106,8 +104,8 @@ html {
 .search {
   position: absolute;
   left: 41%;
-  top: 7px; /* Adjust top position */
-  transform: translateX(-50%); /* Center horizontally */
+  top: 7px; 
+  transform: translateX(-50%);
   color: black;
 }
 
@@ -212,7 +210,7 @@ button {
 }
 
 .mobile-button-left, .mobile-button-right {
-  display: none; /* By default, hide the button */
+  display: none;
 }
 
 .text-container {
@@ -230,13 +228,13 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: stretch; /* Ensures all cards stretch to the same height */
-  gap: 20px; /* space between cards */
+  align-items: stretch;
+  gap: 20px;
 }
 
 .card-wrapper {
-  flex: 1 1 280px; /* Grow to fill space, shrink to fit and default width */
-  max-width: 280px; /* Ensure cards don't grow too large */
+  flex: 1 1 280px;
+  max-width: 280px;
   display: flex;
   flex-direction: column;
 }
@@ -257,7 +255,6 @@ button {
 
 }
 
-/* Responsive adjustments */
 @media (max-width: 1024px) {
   #nav, #user {
     width: 25%;
@@ -270,20 +267,25 @@ button {
 
 @media (max-width: 480px) {
   .card-wrapper {
-    margin: 5px; /* Reduce margin on very small screens */
+    margin: 5px;
   }
 }
 
 @media (max-width: 768px) {
+  .mobile-button-left,
+  .mobile-button-right {
+    display: none;
+  }
+
   .card-wrapper {
-    flex: 1 1 100%; /* Each card takes full width on small screens */
-    max-width: 100%; /* Ensure the cards take full width */
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 
   .mobile-button-left,
   .mobile-button-right {
     display: block;
-    margin-left: 10px; /* Adjust spacing between search bar and buttons */
+    margin-left: 10px;
   }
 
   .mobile-button-left {
@@ -295,31 +297,31 @@ button {
   }
 
   #nav, #user {
-    display: none; /* Hide the navigation and user sections */
+    display: none;
   }
   .search-bar {
-    position: relative; /* Remove absolute positioning for responsiveness */
-    margin-right: 15px; /* Add margin to separate from the back button */
+    position: relative; 
+    margin-right: 15px;
   }
 
   .search-icon {
-    position: absolute; /* Position relative to the input box */
-    right: 15px; /* Adjust right position */
+    position: absolute; 
+    right: 15px;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 20px; /* Adjust size for smaller screens */
+    font-size: 20px;
   }
 
   .input-group-prepend {
-    margin-right: 0; /* Remove margin on smaller screens */
+    margin-right: 0;
   }
 }
 
 @media (max-width: 480px) {
   .search {
     left: 50%;
-    top: 5px; /* Adjust top position */
-    font-size: 18px; /* Adjust size for smaller screens */
+    top: 5px;
+    font-size: 18px;
   }
 
   .search-icon {

@@ -23,7 +23,6 @@ function News() {
       title:
         "THE IMPACT OF DIGITAL LEARNING ON THE PHILIPPINE EDUCATION SYSTEM: A COMPREHENSIVE ANALYSIS",
     },
-    // Add more card objects here
   ];
 
   const traits = [
@@ -42,7 +41,6 @@ function News() {
       imageUrl: digitalNatives,
       title: "DIGITAL NATIVES, DIGITAL LEARNERS",
     },
-    // Add more card objects here
   ];
   return (
     <div>
