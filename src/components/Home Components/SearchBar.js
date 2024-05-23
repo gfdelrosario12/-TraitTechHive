@@ -11,20 +11,32 @@ function SearchBar() {
   };
 
   return (
-    <div className="container-fluid d-flex flex-row align-items-center">
-
-      <div className="input-group mb-3 d-flex flex-row align-items-center flex-grow-1">
-      <div className="mobile-button-left me-1">
-        <button
-          className="btn rounded-pill back"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offCanvasLeft"
-          aria-controls="offCanvasLeft"
-        >
-          <h1 className="fs-6 title-font pt-2">Navigation</h1>
-        </button>
+    <div className="container-fluid">
+      <div className="mobile-buttons my-3 d-flex flex-row justify-content-center align-items-center">
+        <div className="mobile-button-left me-1">
+          <button
+            className="btn rounded-pill back"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offCanvasLeft"
+            aria-controls="offCanvasLeft"
+          >
+            <h1 className="fs-6 title-font pt-2">Navigation</h1>
+          </button>
+        </div>
+        <div className="mobile-button-right">
+          <button
+            className="btn rounded-pill back"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offCanvasRight"
+            aria-controls="offCanvasRight"
+          >
+            <h1 className="fs-6 title-font pt-2">My Peers</h1>
+          </button>
+        </div>
       </div>
+      <div className="input-group mb-3 d-flex flex-row align-items-center flex-grow-1">
         <div className="input-group-prepend" onClick={handleClick}>
           <button className="btn btn-outline-secondary rounded-pill back mx-2" type="button">
             <IoIosArrowBack />
@@ -36,17 +48,6 @@ function SearchBar() {
             <CiSearch className="search-icon" />
           </Link>
         </div>
-        <div className="mobile-button-right">
-        <button
-          className="btn rounded-pill back"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offCanvasRight"
-          aria-controls="offCanvasRight"
-        >
-          <h1 className="fs-6 title-font pt-2">My Peers</h1>
-        </button>
-      </div>
       </div>
     </div>
   );

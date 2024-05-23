@@ -275,6 +275,11 @@ button {
 }
 
 @media (max-width: 768px) {
+  .mobile-button-left,
+  .mobile-button-right {
+    display: none;
+  }
+  
   .card-wrapper {
     flex: 1 1 100%; /* Each card takes full width on small screens */
     max-width: 100%; /* Ensure the cards take full width */
