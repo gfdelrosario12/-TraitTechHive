@@ -37,7 +37,7 @@ function DeviceDefinition() {
         </div>
       </CardSideImage>
       <h5 className="fs-3 text-center card-title title-font">Characteristics of Mobile Devices</h5>
-      <div className="d-flex flex-row justify-content-center align-items-center">
+      <div className="d-flex flex-row flex-wrap justify-content-center align-items-center">
         <div className="mx-3">
             <Card
               cardWidth="200px"
@@ -73,7 +73,7 @@ function DeviceDefinition() {
         </div>
       </div>
       <h5 className="fs-3 text-center card-title title-font">Why do we use mobile devices?</h5>
-      <div className="d-flex flex-row justify-content-center align-items-center">
+      <div className="d-flex flex-row flex-wrap justify-content-center align-items-center">
         <div className="mx-3">
             <Card
               cardWidth="200px"
@@ -111,7 +111,7 @@ function DeviceDefinition() {
       <h5 className="fs-3 text-center card-title title-font">
         The downside of using mobile devices
       </h5>
-      <div className="d-flex flex-row justify-content-center align-items-center">
+      <div className="d-flex flex-row flex-wrap justify-content-center align-items-center">
         <div className="mx-3">
             <Card
               cardWidth="200px"
