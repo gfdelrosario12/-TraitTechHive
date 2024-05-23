@@ -204,10 +204,6 @@ button {
 
 .black-underline {
   text-decoration: underline;
-<<<<<<< HEAD
-  text-decoration-color: black; /* Change to your desired color */
-}
-=======
   text-decoration-color: black;
 }
 
@@ -341,4 +337,3 @@ button {
     height: 25px;
   }
 }
->>>>>>> dev
