@@ -14,7 +14,7 @@ const Navigation = ({ value1, value2, changeValues }) => {
   return (
     <div>
       <div>
-        <Link to="/" className="title-font fs-2">
+        <Link to="/" className="title-font fs-3">
           <div className="d-flex flex-row align-items-center">
             <img src={logo} className="rounded-circle" />
             <h1 className="ms-2 title-font fs-3">TraitTechHive</h1>

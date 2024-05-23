@@ -15,12 +15,14 @@ html {
   overflow: scroll;
   overflow-x: hidden;
 }
+
 ::-webkit-scrollbar {
   width: 0; /* Remove scrollbar space */
   background: transparent; /* Optional: just make scrollbar invisible */
 }
 
 /* navigation */
+
 .links {
   display: flex;
   flex-direction: column;
@@ -52,7 +54,7 @@ html {
 
 #user {
   width: 20%;
-  padding: 30px 20px 30px 20px;
+  padding: 30px 20px;
   background-color: var(--background-cream);
   border-left: 1px solid var(--black);
 }
@@ -110,15 +112,11 @@ html {
 }
 
 .card-img-border img {
-  border-radius: 17px 18px 0px 0px !important;
-  -webkit-border-radius: 17px 18px 0px 0px !important;
-  -moz-border-radius: 17px 18px 0px 0px !important;
+  border-radius: 17px 18px 0 0 !important;
 }
 
 .card-side-img-border img {
-  border-radius: 19px 0px 0px 19px !important;
-  -webkit-border-radius: 19px 0px 0px 19px !important;
-  -moz-border-radius: 19px 0px 0px 19px !important;
+  border-radius: 19px 0 0 19px !important;
 }
 
 .search-bar input,
@@ -128,9 +126,7 @@ html {
   border-right: 4px solid var(--dark-blue) !important;
   border-bottom: 4px solid var(--dark-blue) !important;
   border-left: 2px solid var(--dark-blue) !important;
-  border-radius: 21px 21px 21px 21px !important;
-  -webkit-border-radius: 21px 21px 21px 21px !important;
-  -moz-border-radius: 21px 21px 21px 21px !important;
+  border-radius: 21px !important;
 }
 
 .search-icon {
@@ -181,8 +177,6 @@ button {
 .slick-arrow.slick-prev {
   background-color: white !important;
   border: 2px solid var(--dark-blue) !important;
-  height: 25px;
-  width: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -190,7 +184,6 @@ button {
   opacity: 0.8;
   height: 30px;
   width: 30px;
-  margin: -10px;
 }
 
 .slick-arrow.slick-next:hover,
@@ -211,14 +204,14 @@ button {
 
 .black-underline {
   text-decoration: underline;
-  text-decoration-color: black; /* Change to your desired color */
+  text-decoration-color: black;
 }
 
 .no-underline {
   text-decoration: none;
 }
 
-.mobile-button-left,.mobile-button-right {
+.mobile-button-left, .mobile-button-right {
   display: none; /* By default, hide the button */
 }
 
@@ -233,7 +226,60 @@ button {
   height: auto;
 }
 
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch; /* Ensures all cards stretch to the same height */
+  gap: 20px; /* space between cards */
+}
+
+.card-wrapper {
+  flex: 1 1 280px; /* Grow to fill space, shrink to fit and default width */
+  max-width: 280px; /* Ensure cards don't grow too large */
+  display: flex;
+  flex-direction: column;
+}
+
+.card-wrapper a {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-wrapper .card {
+  flex: 1;
+}
+
+.offcanvas-body-custom-bg {
+  background-color: var(--background-cream);
+  height: 100%;
+
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  #nav, #user {
+    width: 25%;
+  }
+
+  #content {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-wrapper {
+    margin: 5px; /* Reduce margin on very small screens */
+  }
+}
+
 @media (max-width: 768px) {
+  .card-wrapper {
+    flex: 1 1 100%; /* Each card takes full width on small screens */
+    max-width: 100%; /* Ensure the cards take full width */
+  }
+
   .mobile-button-left,
   .mobile-button-right {
     display: block;
@@ -248,17 +294,9 @@ button {
     right: 10px;
   }
 
-  /* Additional styling for the buttons if needed */
-  .mobile-button-left button,
-  .mobile-button-right button {
-    font-size: 14px;
-    /* Add additional styles as needed */
-  }
-    
   #nav, #user {
     display: none; /* Hide the navigation and user sections */
   }
-
   .search-bar {
     position: relative; /* Remove absolute positioning for responsiveness */
     margin-right: 15px; /* Add margin to separate from the back button */
@@ -275,6 +313,27 @@ button {
   .input-group-prepend {
     margin-right: 0; /* Remove margin on smaller screens */
   }
+}
 
+@media (max-width: 480px) {
+  .search {
+    left: 50%;
+    top: 5px; /* Adjust top position */
+    font-size: 18px; /* Adjust size for smaller screens */
+  }
 
+  .search-icon {
+    font-size: 18px;
+  }
+
+  .outer-tag {
+    width: 120px;
+    height: 35px;
+  }
+
+  .tag-icon {
+    font-size: 18px;
+    width: 25px;
+    height: 25px;
+  }
 }
