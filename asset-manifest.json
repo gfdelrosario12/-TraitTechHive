@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/TraitTechHive/static/css/main.2b5c9939.css",
-    "main.js": "/TraitTechHive/static/js/main.6873141a.js",
+    "main.js": "/TraitTechHive/static/js/main.91f141e4.js",
     "static/js/453.bdf565f7.chunk.js": "/TraitTechHive/static/js/453.bdf565f7.chunk.js",
     "static/media/46.png": "/TraitTechHive/static/media/46.c595a2e140a543b10fea.png",
     "static/media/19.png": "/TraitTechHive/static/media/19.c4c362449b0da19a1525.png",
@@ -63,11 +63,11 @@
     "static/media/slick.woff": "/TraitTechHive/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/TraitTechHive/index.html",
     "main.2b5c9939.css.map": "/TraitTechHive/static/css/main.2b5c9939.css.map",
-    "main.6873141a.js.map": "/TraitTechHive/static/js/main.6873141a.js.map",
+    "main.91f141e4.js.map": "/TraitTechHive/static/js/main.91f141e4.js.map",
     "453.bdf565f7.chunk.js.map": "/TraitTechHive/static/js/453.bdf565f7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2b5c9939.css",
-    "static/js/main.6873141a.js"
+    "static/js/main.91f141e4.js"
   ]
 }
