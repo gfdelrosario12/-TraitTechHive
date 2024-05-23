@@ -8,7 +8,7 @@ import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 
 const SamplePrevArrow = (props) => {
-  const { className, style, onClick } = props;
+  const { className, onClick } = props;
   return (
     <div onClick={onClick} className={`arrow ${className}`}>
       <IoIosArrowBack class="arrows" style={{ color: "black" }} />
@@ -17,7 +17,7 @@ const SamplePrevArrow = (props) => {
 };
 
 function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
+  const { className, onClick } = props;
   return (
     <div onClick={onClick} className={`arrow ${className}`}>
       <IoIosArrowForward class="arrows" style={{ color: "black" }} />
@@ -36,15 +36,52 @@ function CardSlider({ cards }) {
     prevArrow: <SamplePrevArrow to="prev" />,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 1024,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          dots: true,
-          infinite: true,
-          speed: 500,
-          nextArrow: <SampleNextArrow to="next" />,
-          prevArrow: <SamplePrevArrow to="prev" />,
+        },
+      },
+      {
+        breakpoint: 1080,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 820,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
         },
       },
     ],

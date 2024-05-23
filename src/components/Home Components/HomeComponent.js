@@ -74,22 +74,34 @@ const HomeComponent = ({ children, value1, value2, value3, changeValues }) => {
       </div>
       <div
         className="offcanvas offcanvas-start"
-        tabindex="-1"
+        tabIndex="-1"
         id="offCanvasLeft"
         aria-labelledby="offCanvasLeftLabel"
       >
         <div className="offcanvas-body">
+          <button
+            type="button"
+            className="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
           <Navigation />
         </div>
       </div>
 
       <div
         className="offcanvas offcanvas-end"
-        tabindex="-1"
+        tabIndex="-1"
         id="offCanvasRight"
         aria-labelledby="offCanvasRightLabel"
       >
         <div className="offcanvas-body-custom-bg p-4">
+          <button
+            type="button"
+            className="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
           <div>
             <div className="d-flex flex-row align-items-center mb-3">
               <div className="mx-1">

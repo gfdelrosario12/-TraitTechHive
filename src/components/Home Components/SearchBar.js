@@ -36,9 +36,9 @@ function SearchBar() {
           </button>
         </div>
       </div>
-      <div className="input-group mb-3 d-flex flex-row align-items-center flex-grow-1">
+      <div className="input-group mb-3 d-flex flex-row flex-wrap align-items-center flex-grow-1 justify-content-center align-items-center">
         <div className="input-group-prepend" onClick={handleClick}>
-          <button className="btn btn-outline-secondary rounded-pill back mx-2" type="button">
+          <button className="btn btn-outline-secondary rounded-pill back m-2" type="button">
             <IoIosArrowBack />
           </button>
         </div>
