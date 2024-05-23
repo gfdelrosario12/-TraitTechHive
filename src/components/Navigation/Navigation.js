@@ -20,7 +20,7 @@ const Navigation = ({changeValues }) => {
             <h1 className="ms-2 title-font fs-3">TraitTechHive</h1>
           </div>
         </Link>
-        <div className="links my-4 title-font link-hover fs-5">
+        <div className="links my-2 title-font link-hover fs-5">
           <Link to="/" className="p-2">
             <BsFillHouseFill className="mx-2" />
             Overview
@@ -57,7 +57,7 @@ const Navigation = ({changeValues }) => {
           Log Out
         </button>
       </div>
-      <div className="my-3">
+      <div className="my-2">
           <Link to="/qr" className="no-underline">
             <Card
               cardWidth="200px"

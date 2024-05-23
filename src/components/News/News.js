@@ -51,10 +51,10 @@ function News() {
             <div className="mx-2">
               <a href={card.href} className="title-font" target="_blank" rel="noopener noreferrer">
                 <Card
-                  cardWidth="280px"
-                  cardHeight="270px"
-                  imageWidth="275px"
-                  imageHeight="90px"
+                  cardWidth="240px"
+                  cardHeight="300px"
+                  imageWidth="235px"
+                  imageHeight="85px"
                   imageUrl={card.imageUrl}
                 >
                   <div>
@@ -71,9 +71,9 @@ function News() {
             <div className="mx-2">
               <a href={card.href} className="title-font" target="_blank" rel="noopener noreferrer">
                 <Card
-                  cardWidth="280px"
-                  cardHeight="200px"
-                  imageWidth="275px"
+                  cardWidth="230px"
+                  cardHeight="220px"
+                  imageWidth="225px"
                   imageHeight="80px"
                   imageUrl={card.imageUrl}
                 >
