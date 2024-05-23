@@ -89,7 +89,7 @@ const HomeComponent = ({children, value1, value2, value3, changeValues}) => {
         id="offCanvasRight"
         aria-labelledby="offCanvasRightLabel"
       >
-        <div className="offcanvas-body">
+        <div className="offcanvas-body-custom-bg p-4">
         <div>
       <div className="d-flex flex-row align-items-center mb-3">
         <div className="mx-1">
